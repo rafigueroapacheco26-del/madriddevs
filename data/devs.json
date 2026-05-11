@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "nombre": "Carlos",
+    "edad": 25,
+    "profesion": "Frontend Developer",
+    "ciudad": "Madrid",
+    "email": "carlos@gmail.com",
+    "activo": true,
+    "avatar": "https://i.pravatar.cc/300?img=1",
+    "skills": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React"
+    ],
+    "location": [
+      40.408688,
+      -3.703338
+    ]
+  },
+  {
+    "id": 2,
+    "nombre": "Ana",
+    "edad": 28,
+    "profesion": "UI Designer",
+    "ciudad": "Barcelona",
+    "email": "ana@gmail.com",
+    "activo": true,
+    "avatar": "https://i.pravatar.cc/300?img=2",
+    "skills": [
+      "Figma",
+      "UI Design",
+      "UX",
+      "Adobe XD"
+    ]
+  },
+  {
+    "id": 3,
+    "nombre": "Luis",
+    "edad": 31,
+    "profesion": "Backend Developer",
+    "ciudad": "Valencia",
+    "email": "luis@gmail.com",
+    "activo": false,
+    "avatar": "https://i.pravatar.cc/300?img=3",
+    "skills": [
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "SQL"
+    ],
+    "location": [
+      40.408688,
+      -3.703338
+    ]
+  },
+  {
+    "id": 4,
+    "nombre": "Marta",
+    "edad": 22,
+    "profesion": "UX Designer",
+    "ciudad": "Sevilla",
+    "email": "marta@gmail.com",
+    "activo": true,
+    "avatar": "https://i.pravatar.cc/300?img=4",
+    "skills": [
+      "UX Research",
+      "Wireframes",
+      "Figma",
+      "Prototyping"
+    ],
+    "location": [
+      40.408688,
+      -3.703338
+    ]
+  },
+  {
+    "id": 5,
+    "nombre": "David",
+    "edad": 35,
+    "profesion": "Full Stack Developer",
+    "ciudad": "Bilbao",
+    "email": "david@gmail.com",
+    "activo": true,
+    "avatar": "https://i.pravatar.cc/300?img=5",
+    "skills": [
+      "React",
+      "Node.js",
+      "PostgreSQL",
+      "Docker"
+    ],
+    "location": [
+      40.408688,
+      -3.703338
+    ]
+  }
+]
