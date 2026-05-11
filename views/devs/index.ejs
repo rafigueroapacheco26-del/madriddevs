@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Devs</title>
+</head>
+
+<body>
+  <ul>
+    <% devs.forEach((dev) => { %>
+    <li>
+      <a href="/devs/<%= dev.id %>"><%= dev.nombre %></a>
+    </li>
+    <% }) %>
+  </ul>
+
+
+</body>
+
+</html>
