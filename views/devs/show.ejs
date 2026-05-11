@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dev <%= dev.nombre %></title>
+</head>
+
+<body>
+
+  <div>
+    <img src="<%= dev.avatar %>" alt="avatar del desarrollador <%= dev.nombre %>">
+    <p>Nombre: <%= dev.nombre %></p>
+    <p>Edad: <%= dev.edad %></p>
+    <p>Profesion: <%= dev.profesion %></p>
+    <p>Ciudad: <%= dev.ciudad %></p>
+    <p>Correo: <%= dev.email %></p>
+    <p>Activo: <%= (dev.activo)? 'Si' : 'No' %></p>
+    <p>Skills:</p>
+    <ul>
+      <% dev.skills.forEach( (skill) => { %>
+      <li><%= skill %></li>
+      <% }) %>
+    </ul>
+
+  </div>
+
+</body>
+
+</html>

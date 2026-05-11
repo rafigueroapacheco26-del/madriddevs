@@ -15,6 +15,13 @@ app.get('/devs', (req, res) => {
   res.render('devs/index', { devs })
 })
 
+app.get('/devs/:id', (req, res) => {
+  let dev = devs.find((dev) => dev.id == req.params.id)
+  if (!dev)
+    return res.status(404).send('Desarrollador no encontrado')
+  res.render('devs/show', { dev })
+})
+
 app.listen(PORT, (error) => {
   if (error) return console.log(error)
   console.log(`Server running on http://localhost:${PORT}`)
