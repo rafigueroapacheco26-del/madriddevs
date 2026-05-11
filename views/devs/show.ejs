@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dev <%= dev.nombre %></title>
-</head>
-
-<body>
-
+<main class="container">
   <div>
     <img src="<%= dev.avatar %>" alt="avatar del desarrollador <%= dev.nombre %>">
     <p>Nombre: <%= dev.nombre %></p>
@@ -23,9 +13,5 @@
       <li><%= skill %></li>
       <% }) %>
     </ul>
-
   </div>
-
-</body>
-
-</html>
+</main>

@@ -1,6 +1,11 @@
 import express from 'express'
 import devs from './data/devs.json' with { type: 'json' }
 import path from 'path'
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
 import expressLayouts from 'express-ejs-layouts'
 
 const PORT = 3000
@@ -24,14 +29,14 @@ app.get('/', (req, res) => {
 })
 
 app.get('/devs', (req, res) => {
-  res.render('devs/index', { devs })
+  res.render('devs/index', { title: 'Desarrolladores', devs })
 })
 
 app.get('/devs/:id', (req, res) => {
   let dev = devs.find((dev) => dev.id == req.params.id)
   if (!dev)
     return res.status(404).send('Desarrollador no encontrado')
-  res.render('devs/show', { dev })
+  res.render('devs/show', { title: `Desarrollador ${dev.nombre}`, dev })
 })
 
 app.listen(PORT, (error) => {
