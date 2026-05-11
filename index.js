@@ -1,6 +1,7 @@
 import express from 'express'
 import devs from './data/devs.json' with { type: 'json' }
 import path from 'path'
+import expressLayouts from 'express-ejs-layouts'
 
 const PORT = 3000
 const app = express()
@@ -10,6 +11,13 @@ app.set('view engine', 'ejs')
 // Servir los archivos de Bootstrap como estáticos
 app.use('/css/bootstrap', express.static(path.join(__dirname, 'node_modules/bootstrap/dist/css')));
 app.use('/js/bootstrap', express.static(path.join(__dirname, 'node_modules/bootstrap/dist/js')));
+//Usar express-ejs-layouts
+app.use(expressLayouts)
+app.set('layout', 'layouts/default-layout');
+app.set("layout extractScripts", true)
+app.set("layout extractStyles", true)
+app.set("layout extractMetas", true)
+
 
 app.get('/', (req, res) => {
   res.render('index')
