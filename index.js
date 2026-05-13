@@ -25,7 +25,7 @@ app.set("layout extractMetas", true)
 
 
 app.get('/', (req, res) => {
-  res.render('index')
+  res.render('index', {title: 'Devs'})
 })
 
 app.get('/devs', (req, res) => {

@@ -1,3 +1,7 @@
-body {
-  background-color: aquamarine;
+main {
+  min-height: 80vh;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
 }
